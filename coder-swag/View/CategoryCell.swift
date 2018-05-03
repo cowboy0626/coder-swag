@@ -13,15 +13,10 @@ class CategoryCell: UITableViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    // 셀을 채워주는 기능 (셀은 셀 스스로 자신을 처리해야 함. VC에서 셀을 설정하게 하면 안 됨) 
+    func updateViews(category: Category){
+        categoryImage.image = UIImage(named: category.imageName)
+        categoryTitle.text = category.title
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }
