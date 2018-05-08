@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3E11F020A1FFFB00C68629 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E11EF20A1FFFB00C68629 /* ProductCell.swift */; };
 		0BB62322209A3287000374D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB62321209A3287000374D2 /* AppDelegate.swift */; };
 		0BB62324209A3287000374D2 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB62323209A3287000374D2 /* CategoriesVC.swift */; };
 		0BB62327209A3287000374D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BB62325209A3287000374D2 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B3E11EF20A1FFFB00C68629 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		0BB6231E209A3287000374D2 /* coder-swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "coder-swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BB62321209A3287000374D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BB62323209A3287000374D2 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				0BB62336209A3865000374D2 /* CategoryCell.swift */,
+				0B3E11EF20A1FFFB00C68629 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				0BB62324209A3287000374D2 /* CategoriesVC.swift in Sources */,
 				0BB62322209A3287000374D2 /* AppDelegate.swift in Sources */,
 				0BB62337209A3865000374D2 /* CategoryCell.swift in Sources */,
+				0B3E11F020A1FFFB00C68629 /* ProductCell.swift in Sources */,
 				0BB62339209B65F0000374D2 /* Category.swift in Sources */,
 				0BB6233C209B66FA000374D2 /* DataService.swift in Sources */,
 			);
