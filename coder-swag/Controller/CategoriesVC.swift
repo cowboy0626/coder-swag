@@ -39,6 +39,30 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             return CategoryCell()
         }
     }
+    
+    
+    // ProductsVC로 연결하기
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 카테고리 타이틀 정의
+        let category = DataService.instance.getCategories()[indexPath.row]
+        // 링크연결
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            // back button 수정
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+            // 개발모드(빌드타임)에서 타입확인하기
+            assert(sender as? Category != nil)
+            productsVC.initProducts(category: sender as! Category)
+            
+        }
+    }
+    
 
 }
 
